@@ -2,7 +2,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
  
 module.exports = {
   output: {
-    publicPath: "http://localhost:3000/",
+    publicPath: "http://localhost:4000/",
     uniqueName: "mfe1"
   },
   optimization: {
@@ -17,7 +17,7 @@ module.exports = {
       library: { type: "var", name: "mfe1" },
       filename: "remoteEntry.js",
       exposes: {
-        './Module': './projects/mfe1/src/app/flights/flights.module.ts',
+        './Module': './projects/mfe1/src/app/home/home.module.ts',
       },
       shared: ["@angular/core", "@angular/common", "@angular/router"]
     })
