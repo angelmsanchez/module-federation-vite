@@ -1,11 +1,13 @@
 {
-  "extends": "./tsconfig.json",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "./out-tsc/app",
-    "types": []
+    "outDir": "../../out-tsc/app",
+    "types": [],
+    "target": "es2020"
   },
   "files": [
-    "src/main.ts"
+    "src/main.ts",
+    "src/polyfills.ts"
   ],
   "include": [
     "src/**/*.d.ts"

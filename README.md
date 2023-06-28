@@ -1,27 +1,16 @@
-# ModuleFederationVite
+# FederationDemo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
+Demonstrates webpack 5 Module Federation with Angular and the Angular Router.
 
-## Development server
+## Start
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Install dependencies with yarn (!)
+  - You need to use yarn until Angular 12 (May 2021) to use the experimental opt-in for webpack 5
+  - Beginning with Angular 12, webpack 5 will be active by default
+- Run Micro Frontend 1
+  - ng serve mfe1 -o
+- Run Micro Frontend 2
+  - ng serve mfe2 -o
+- Run the shell
+  - ng serve shell -o
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
